@@ -10,6 +10,48 @@
   "frequentPostings": "Frequent Postings",
   "fundMapping": "Fund Mapping",
   "migrateOpeningBalances": "Migrate Opening Balances (Office-wise)",
+  "openingBalances": {
+    "breadcrumb": "Migrate Opening Balances",
+    "fields": {
+      "office": "Office*",
+      "officePlaceholder": "Select an office",
+      "currency": "Currency*",
+      "currencyPlaceholder": "Select a currency",
+      "transactionDate": "Opening Balance Date*"
+    },
+    "checkMappings": "Check Financial Activity Mappings",
+    "contraAccount": "Contra account:",
+    "table": {
+      "account": "Account",
+      "glCode": "GL Code",
+      "debit": "Debit",
+      "credit": "Credit",
+      "total": "Total"
+    },
+    "groups": {
+      "assets": "Assets",
+      "liabilities": "Liabilities",
+      "equity": "Equity",
+      "income": "Income",
+      "expenses": "Expenses"
+    },
+    "amountLabel": {
+      "debit": "Debit for {{account}}",
+      "credit": "Credit for {{account}}"
+    },
+    "difference": "Debits and credits differ by {{amount}}.",
+    "saved": "Opening balances saved as journal entry <id>{{id}}</id>.",
+    "openJournalEntries": "Open Journal Entries",
+    "errors": {
+      "loadLists": "Failed to load offices and currencies.",
+      "loadOffice": "Failed to load the opening balances for this office.",
+      "selectCurrency": "Select a currency.",
+      "enterDate": "Enter the opening balance date.",
+      "bothSides": "Enter either a debit or a credit for an account, not both.",
+      "unbalanced": "The total debits must equal the total credits.",
+      "save": "Failed to save the opening balances."
+    }
+  },
   "searchAccounts": "Search accounts",
   "title": "Accounting"
 }

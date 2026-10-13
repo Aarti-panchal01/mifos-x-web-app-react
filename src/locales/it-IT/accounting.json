@@ -10,6 +10,48 @@
   "frequentPostings": "Registrazioni frequenti",
   "fundMapping": "Mappatura fondi",
   "migrateOpeningBalances": "Migra saldi iniziali",
+  "openingBalances": {
+    "breadcrumb": "Migra saldi iniziali",
+    "fields": {
+      "office": "Ufficio*",
+      "officePlaceholder": "Seleziona un ufficio",
+      "currency": "Valuta*",
+      "currencyPlaceholder": "Seleziona una valuta",
+      "transactionDate": "Data del saldo iniziale*"
+    },
+    "checkMappings": "Verifica le mappature delle attività finanziarie",
+    "contraAccount": "Conto di contropartita:",
+    "table": {
+      "account": "Conto",
+      "glCode": "Codice contabile",
+      "debit": "Dare",
+      "credit": "Avere",
+      "total": "Totale"
+    },
+    "groups": {
+      "assets": "Attività",
+      "liabilities": "Passività",
+      "equity": "Patrimonio netto",
+      "income": "Ricavi",
+      "expenses": "Costi"
+    },
+    "amountLabel": {
+      "debit": "Dare per {{account}}",
+      "credit": "Avere per {{account}}"
+    },
+    "difference": "Il totale dare e il totale avere differiscono di {{amount}}.",
+    "saved": "Saldi iniziali salvati come registrazione contabile <id>{{id}}</id>.",
+    "openJournalEntries": "Apri registrazioni contabili",
+    "errors": {
+      "loadLists": "Impossibile caricare gli uffici e le valute.",
+      "loadOffice": "Impossibile caricare i saldi iniziali di questo ufficio.",
+      "selectCurrency": "Seleziona una valuta.",
+      "enterDate": "Inserisci la data del saldo iniziale.",
+      "bothSides": "Inserisci un importo in dare o in avere per un conto, non entrambi.",
+      "unbalanced": "Il totale dare deve essere uguale al totale avere.",
+      "save": "Impossibile salvare i saldi iniziali."
+    }
+  },
   "searchAccounts": "Cerca conti",
   "title": "Contabilità"
 }

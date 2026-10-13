@@ -40,6 +40,7 @@ import CreateClosure from '@/pages/accounting/closing-entries/CreateClosure'
 import ViewClosure from '@/pages/accounting/closing-entries/ViewClosure'
 import EditClosure from '@/pages/accounting/closing-entries/EditClosure'
 import FinancialActivityMappings from '@/pages/accounting/financial-activity-mappings/FinancialActivityMappings'
+import OpeningBalances from '@/pages/accounting/opening-balances/OpeningBalances'
 import CreateFinancialActivityMappings from '@/pages/accounting/financial-activity-mappings/CreateFinancialActivityMappings'
 import ViewFinancialActivityMappings from '@/pages/accounting/financial-activity-mappings/ViewFinancialActivityMappings'
 import PeriodicAccruals from '@/pages/accounting/periodic-accruals/PeriodicAccruals'
@@ -348,6 +349,12 @@ const AppRoutes = () => {
           <Route
             path="/accounting/closing-entries/view/:id/edit"
             element={<EditClosure />}
+          />
+
+          {/* Migrate Opening Balances */}
+          <Route
+            path="/accounting/opening-balances"
+            element={<OpeningBalances />}
           />
 
           {/* Financial Activity Mappings */}

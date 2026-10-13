@@ -10,6 +10,48 @@
   "frequentPostings": "Publications fréquentes",
   "fundMapping": "Mappage des fonds",
   "migrateOpeningBalances": "Migrer les soldes d'ouverture",
+  "openingBalances": {
+    "breadcrumb": "Migrer les soldes d'ouverture",
+    "fields": {
+      "office": "Bureau*",
+      "officePlaceholder": "Sélectionnez un bureau",
+      "currency": "Devise*",
+      "currencyPlaceholder": "Sélectionnez une devise",
+      "transactionDate": "Date du solde d'ouverture*"
+    },
+    "checkMappings": "Vérifier les correspondances des activités financières",
+    "contraAccount": "Compte de contrepartie :",
+    "table": {
+      "account": "Compte",
+      "glCode": "Code comptable",
+      "debit": "Débit",
+      "credit": "Crédit",
+      "total": "Total"
+    },
+    "groups": {
+      "assets": "Actifs",
+      "liabilities": "Passifs",
+      "equity": "Capitaux propres",
+      "income": "Produits",
+      "expenses": "Charges"
+    },
+    "amountLabel": {
+      "debit": "Débit pour {{account}}",
+      "credit": "Crédit pour {{account}}"
+    },
+    "difference": "Les débits et les crédits diffèrent de {{amount}}.",
+    "saved": "Soldes d'ouverture enregistrés sous l'écriture comptable <id>{{id}}</id>.",
+    "openJournalEntries": "Ouvrir les écritures comptables",
+    "errors": {
+      "loadLists": "Échec du chargement des bureaux et des devises.",
+      "loadOffice": "Échec du chargement des soldes d'ouverture de ce bureau.",
+      "selectCurrency": "Sélectionnez une devise.",
+      "enterDate": "Saisissez la date du solde d'ouverture.",
+      "bothSides": "Saisissez soit un débit, soit un crédit pour un compte, pas les deux.",
+      "unbalanced": "Le total des débits doit être égal au total des crédits.",
+      "save": "Échec de l'enregistrement des soldes d'ouverture."
+    }
+  },
   "searchAccounts": "Rechercher des comptes",
   "title": "Comptabilité"
 }

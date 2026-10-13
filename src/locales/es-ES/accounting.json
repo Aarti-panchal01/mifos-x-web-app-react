@@ -10,6 +10,48 @@
   "frequentPostings": "Publicaciones frecuentes",
   "fundMapping": "Mapeo de fondos",
   "migrateOpeningBalances": "Migrar saldos de apertura (por oficina)",
+  "openingBalances": {
+    "breadcrumb": "Migrar saldos de apertura",
+    "fields": {
+      "office": "Oficina*",
+      "officePlaceholder": "Seleccione una oficina",
+      "currency": "Moneda*",
+      "currencyPlaceholder": "Seleccione una moneda",
+      "transactionDate": "Fecha del saldo de apertura*"
+    },
+    "checkMappings": "Revisar las asignaciones de actividades financieras",
+    "contraAccount": "Cuenta de contrapartida:",
+    "table": {
+      "account": "Cuenta",
+      "glCode": "Código contable",
+      "debit": "Débito",
+      "credit": "Crédito",
+      "total": "Total"
+    },
+    "groups": {
+      "assets": "Activos",
+      "liabilities": "Pasivos",
+      "equity": "Patrimonio",
+      "income": "Ingresos",
+      "expenses": "Gastos"
+    },
+    "amountLabel": {
+      "debit": "Débito para {{account}}",
+      "credit": "Crédito para {{account}}"
+    },
+    "difference": "Los débitos y los créditos difieren en {{amount}}.",
+    "saved": "Saldos de apertura guardados como el asiento contable <id>{{id}}</id>.",
+    "openJournalEntries": "Abrir asientos contables",
+    "errors": {
+      "loadLists": "No se pudieron cargar las oficinas y las monedas.",
+      "loadOffice": "No se pudieron cargar los saldos de apertura de esta oficina.",
+      "selectCurrency": "Seleccione una moneda.",
+      "enterDate": "Introduzca la fecha del saldo de apertura.",
+      "bothSides": "Introduzca un débito o un crédito para cada cuenta, no ambos.",
+      "unbalanced": "El total de débitos debe ser igual al total de créditos.",
+      "save": "No se pudieron guardar los saldos de apertura."
+    }
+  },
   "searchAccounts": "Buscar cuentas",
   "title": "Contabilidad"
 }
