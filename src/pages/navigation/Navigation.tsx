@@ -51,7 +51,7 @@ const Navigation = () => {
   useEffect(() => {
     ;(async () => {
       try {
-        const res = await fineract.get('/offices')
+        const res = await fineract.get('v1/offices')
         setOffices(res.data ?? [])
       } catch (err) {
         console.error('Failed to fetch offices', err)
@@ -68,7 +68,7 @@ const Navigation = () => {
     }
     ;(async () => {
       try {
-        const res = await fineract.get('/staff', {
+        const res = await fineract.get('v1/staff', {
           params: { officeId: Number(selectedOfficeId) },
         })
         const list = res.data?.pageItems ?? res.data ?? []
@@ -93,7 +93,7 @@ const Navigation = () => {
     }
     ;(async () => {
       try {
-        const res = await fineract.get('/runreports/GroupNamesByStaff', {
+        const res = await fineract.get('v1/runreports/GroupNamesByStaff', {
           params: {
             R_staffId: Number(selectedOfficerId),
             genericResultSet: false,
@@ -126,7 +126,7 @@ const Navigation = () => {
     }
     ;(async () => {
       try {
-        const res = await fineract.get('/groups', {
+        const res = await fineract.get('v1/groups', {
           params: { centerId: Number(selectedCenterId) },
         })
         const list = res.data?.pageItems ?? []
@@ -152,7 +152,7 @@ const Navigation = () => {
     }
     ;(async () => {
       try {
-        const res = await fineract.get('/clients', {
+        const res = await fineract.get('v1/clients', {
           params: { groupId: Number(selectedGroupId) },
         })
         const list = res.data?.pageItems ?? []
