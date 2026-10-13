@@ -148,6 +148,8 @@ import ViewAccountNumberPreferences from '@/pages/system/account-number-preferen
 import EntityToEntityMapping from '@/pages/system/entity-to-entity-mapping/EntityToEntityMapping'
 import ManageExternalEvents from '@/pages/system/manage-external-events/ManageExternalEvents'
 import ManageHooks from '@/pages/system/manage-hooks/ManageHooks'
+import ExternalServices from '@/pages/system/external-services/ExternalServices'
+import EditExternalService from '@/pages/system/external-services/EditExternalService'
 import Configurations from '@/pages/system/configurations/Configurations'
 import AuditTrails from '@/pages/system/audit-trails/AuditTrails'
 import ViewAuditTrail from '@/pages/system/audit-trails/ViewAuditTrail'
@@ -813,6 +815,15 @@ const AppRoutes = () => {
           />
 
           {/* Configurations */}
+          {/* External Services */}
+          <Route
+            path="/system/external-services"
+            element={<ExternalServices />}
+          />
+          <Route
+            path="/system/external-services/:service/edit"
+            element={<EditExternalService />}
+          />
           <Route path="/system/hooks" element={<ManageHooks />} />
 
           {/* Manage Hooks */}
