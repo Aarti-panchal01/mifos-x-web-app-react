@@ -320,3 +320,7 @@ This document tracks missing or incorrect fields in the OpenAPI-generated interf
 ### `/loan-originators`
 
 - The generated client has no API class for `/loan-originators` (list, template, get, create, update, delete), so the Loan Originators pages call it through `@/lib/axios`
+
+### `/jobs`
+
+- The generated client has no API class for `/jobs` (list, get, update, `executeJob`, `runhistory`); only `SchedulerApi` (`/scheduler`) exists, so the Manage Jobs pages call `/jobs` through `@/lib/axios`
