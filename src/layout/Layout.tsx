@@ -44,7 +44,7 @@ const Layout = () => {
       <SessionTimeout />
       <div className="flex min-h-screen w-full">
         <AppSidebar />
-        <div className="flex flex-col flex-1 w-full">
+        <div className="flex flex-col flex-1 w-full min-w-0">
           <MfNavbar />
           <main className="flex-1 p-6 bg-gray-50 dark:bg-zinc-900">
             <Outlet />
