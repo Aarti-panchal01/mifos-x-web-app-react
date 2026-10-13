@@ -9,6 +9,37 @@
   "loanProvisioningCriteria": "Critères de provisionnement des prêts",
   "paymentType": "Type de paiement",
   "product": "Produit",
+  "productMix": {
+    "allowedProducts": "Produits autorisés",
+    "confirm": "Confirmer",
+    "create": {
+      "noProducts": "Tous les produits de prêt ont déjà un mix",
+      "productPlaceholder": "Sélectionnez un produit de prêt",
+      "productRequired": "Produit*",
+      "selectProductFirst": "Sélectionnez d'abord un produit de prêt",
+      "title": "Créer un mix produits"
+    },
+    "deleteConfirm": "Voulez-vous vraiment supprimer le mix produits de « {{name}} » ?",
+    "deleting": "Suppression...",
+    "edit": {
+      "title": "Modifier le mix produits"
+    },
+    "errors": {
+      "create": "Impossible de créer le mix produits.",
+      "delete": "Impossible de supprimer le mix produits.",
+      "loadMix": "Impossible de charger le mix produits.",
+      "loadProducts": "Impossible de charger les produits de prêt.",
+      "selectProduct": "Sélectionnez un produit de prêt.",
+      "selectRestricted": "Sélectionnez au moins un produit restreint.",
+      "selectRestrictedOrDelete": "Sélectionnez au moins un produit restreint ou supprimez le mix produits.",
+      "update": "Impossible de mettre à jour le mix produits."
+    },
+    "none": "Aucun",
+    "restrictedProducts": "Produits restreints",
+    "restrictedProductsRequired": "Produits restreints*",
+    "selectProducts": "Sélectionnez des produits",
+    "summary": "Un client ayant un prêt <strong>{{name}}</strong> ne peut pas détenir en même temps un prêt d'un produit restreint."
+  },
   "productsMix": "Mix produits",
   "recurringDepositProducts": "Produits de dépôt récurrent",
   "savingsProducts": "Produits d'épargne",

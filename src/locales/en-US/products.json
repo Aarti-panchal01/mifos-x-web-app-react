@@ -9,6 +9,37 @@
   "loanProvisioningCriteria": "Loan Provisioning Criteria",
   "paymentType": "Payment Type",
   "product": "Product",
+  "productMix": {
+    "allowedProducts": "Allowed Products",
+    "confirm": "Confirm",
+    "create": {
+      "noProducts": "Every loan product already has a mix",
+      "productPlaceholder": "Select a loan product",
+      "productRequired": "Product*",
+      "selectProductFirst": "Select a loan product first",
+      "title": "Create Product Mix"
+    },
+    "deleteConfirm": "Are you sure you want to delete the product mix of \"{{name}}\"?",
+    "deleting": "Deleting...",
+    "edit": {
+      "title": "Edit Product Mix"
+    },
+    "errors": {
+      "create": "Failed to create the product mix.",
+      "delete": "Failed to delete the product mix.",
+      "loadMix": "Failed to load the product mix.",
+      "loadProducts": "Failed to load the loan products.",
+      "selectProduct": "Select a loan product.",
+      "selectRestricted": "Select at least one restricted product.",
+      "selectRestrictedOrDelete": "Select at least one restricted product, or delete the product mix.",
+      "update": "Failed to update the product mix."
+    },
+    "none": "None",
+    "restrictedProducts": "Restricted Products",
+    "restrictedProductsRequired": "Restricted Products*",
+    "selectProducts": "Select products",
+    "summary": "A client with a <strong>{{name}}</strong> loan cannot also hold a loan of a restricted product."
+  },
   "productsMix": "Products Mix",
   "recurringDepositProducts": "Recurring Deposit Products",
   "savingsProducts": "Savings Products",

@@ -6,7 +6,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import {
   Table,
@@ -30,7 +30,9 @@ import { Plus } from 'lucide-react'
 import { AppBreadCrumbs } from '@/components/custom/breadcrumbs/AppBreadCrumbs'
 
 import { getConfiguration } from '@/lib/fineract-openapi'
-import { LoanProductsApi, type GetLoanProductsResponse } from '@/fineract-api'
+import { LoanProductsApi } from '@/fineract-api'
+
+import type { ProductMix } from './types'
 
 // API client instance for Loan Products
 const productMixApi = new LoanProductsApi(getConfiguration())
@@ -39,7 +41,7 @@ const ProductsMix = () => {
   const navigate = useNavigate()
 
   // state for storing product mixes
-  const [mixes, setMixes] = useState<GetLoanProductsResponse[]>([])
+  const [mixes, setMixes] = useState<ProductMix[]>([])
   const [searchTerm, setSearchTerm] = useState('') // filter input
   const [page, setPage] = useState(1) // pagination current page
   const [itemsPerPage, setItemsPerPage] = useState(10) // rows per page
@@ -51,7 +53,13 @@ const ProductsMix = () => {
         const res = await productMixApi.retrieveAllLoanProducts({
           params: { associations: 'productMixes' },
         })
-        setMixes(res.data || [])
+        // These are product mixes, not loan products. Fineract also sends an
+        // entry without a product when no mix exists, so keep real ones only
+        setMixes(
+          ((res.data || []) as unknown as ProductMix[]).filter(
+            mix => mix.productId !== undefined
+          )
+        )
       } catch (err) {
         console.error('Failed to fetch product mixes', err)
       }
@@ -61,7 +69,7 @@ const ProductsMix = () => {
 
   // search filtering
   const filtered = mixes.filter(mix =>
-    mix.name?.toLowerCase().includes(searchTerm.toLowerCase())
+    mix.productName?.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
   // pagination logic
@@ -163,11 +171,21 @@ const ProductsMix = () => {
           <TableBody>
             {paginated.map(mix => (
               <TableRow
-                key={mix.id}
+                key={mix.productId}
                 className="cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors text-base"
+                onClick={() =>
+                  navigate(`/products/products-mix/${mix.productId}`)
+                }
               >
                 <TableCell className="px-6 py-4 font-medium text-zinc-800 dark:text-zinc-100">
-                  {mix.name}
+                  {/* A link too, so the product mix opens from the keyboard */}
+                  <Link
+                    to={`/products/products-mix/${mix.productId}`}
+                    className="hover:underline"
+                    onClick={e => e.stopPropagation()}
+                  >
+                    {mix.productName}
+                  </Link>
                 </TableCell>
               </TableRow>
             ))}

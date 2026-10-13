@@ -9,6 +9,37 @@
   "loanProvisioningCriteria": "Criteri di accantonamento prestiti",
   "paymentType": "Tipo di pagamento",
   "product": "Prodotto",
+  "productMix": {
+    "allowedProducts": "Prodotti consentiti",
+    "confirm": "Conferma",
+    "create": {
+      "noProducts": "Tutti i prodotti di prestito hanno già un mix",
+      "productPlaceholder": "Seleziona un prodotto di prestito",
+      "productRequired": "Prodotto*",
+      "selectProductFirst": "Seleziona prima un prodotto di prestito",
+      "title": "Crea mix prodotti"
+    },
+    "deleteConfirm": "Sei sicuro di voler eliminare il mix prodotti di \"{{name}}\"?",
+    "deleting": "Eliminazione in corso...",
+    "edit": {
+      "title": "Modifica mix prodotti"
+    },
+    "errors": {
+      "create": "Impossibile creare il mix prodotti.",
+      "delete": "Impossibile eliminare il mix prodotti.",
+      "loadMix": "Impossibile caricare il mix prodotti.",
+      "loadProducts": "Impossibile caricare i prodotti di prestito.",
+      "selectProduct": "Seleziona un prodotto di prestito.",
+      "selectRestricted": "Seleziona almeno un prodotto con restrizioni.",
+      "selectRestrictedOrDelete": "Seleziona almeno un prodotto con restrizioni oppure elimina il mix prodotti.",
+      "update": "Impossibile aggiornare il mix prodotti."
+    },
+    "none": "Nessuno",
+    "restrictedProducts": "Prodotti con restrizioni",
+    "restrictedProductsRequired": "Prodotti con restrizioni*",
+    "selectProducts": "Seleziona i prodotti",
+    "summary": "Un cliente con un prestito <strong>{{name}}</strong> non può detenere anche un prestito di un prodotto con restrizioni."
+  },
   "productsMix": "Mix prodotti",
   "recurringDepositProducts": "Prodotti deposito ricorrente",
   "savingsProducts": "Prodotti di risparmio",

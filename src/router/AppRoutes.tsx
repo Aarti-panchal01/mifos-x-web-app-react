@@ -121,6 +121,9 @@ import CreateDelinquencyBucket from '@/pages/products/manage-delinquency-buckets
 import ViewDelinquencyBucket from '@/pages/products/manage-delinquency-buckets/delinquency-bucket/ViewDelinquencyBucket'
 import EditDelinquencyBucket from '@/pages/products/manage-delinquency-buckets/delinquency-bucket/EditDelinquencyBucket'
 import ProductsMix from '@/pages/products/products-mix/ProductsMix'
+import CreateProductMix from '@/pages/products/products-mix/CreateProductMix'
+import ViewProductMix from '@/pages/products/products-mix/ViewProductMix'
+import EditProductMix from '@/pages/products/products-mix/EditProductMix'
 import FixedDepositProducts from '@/pages/products/fixed-deposit-products/FixedDepositProducts'
 import ViewFixedDepositProducts from '@/pages/products/fixed-deposit-products/ViewFixedDepositProducts'
 import RecurringDepositProducts from '@/pages/products/recurring-deposit-products/RecurringDepositProducts'
@@ -683,6 +686,18 @@ const AppRoutes = () => {
 
           {/* Products Mix */}
           <Route path="/products/products-mix" element={<ProductsMix />} />
+          <Route
+            path="/products/products-mix/create"
+            element={<CreateProductMix />}
+          />
+          <Route
+            path="/products/products-mix/:id"
+            element={<ViewProductMix />}
+          />
+          <Route
+            path="/products/products-mix/:id/edit"
+            element={<EditProductMix />}
+          />
 
           {/* Fixed Deposit Products */}
           <Route

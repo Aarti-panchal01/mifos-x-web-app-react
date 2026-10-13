@@ -9,6 +9,37 @@
   "loanProvisioningCriteria": "Criterios de provisión de préstamos",
   "paymentType": "Tipo de pago",
   "product": "Producto",
+  "productMix": {
+    "allowedProducts": "Productos permitidos",
+    "confirm": "Confirmar",
+    "create": {
+      "noProducts": "Todos los productos de préstamo ya tienen una combinación",
+      "productPlaceholder": "Seleccione un producto de préstamo",
+      "productRequired": "Producto*",
+      "selectProductFirst": "Primero seleccione un producto de préstamo",
+      "title": "Crear combinación de productos"
+    },
+    "deleteConfirm": "¿Está seguro de que desea eliminar la combinación de productos de \"{{name}}\"?",
+    "deleting": "Eliminando...",
+    "edit": {
+      "title": "Editar combinación de productos"
+    },
+    "errors": {
+      "create": "No se pudo crear la combinación de productos.",
+      "delete": "No se pudo eliminar la combinación de productos.",
+      "loadMix": "No se pudo cargar la combinación de productos.",
+      "loadProducts": "No se pudieron cargar los productos de préstamo.",
+      "selectProduct": "Seleccione un producto de préstamo.",
+      "selectRestricted": "Seleccione al menos un producto restringido.",
+      "selectRestrictedOrDelete": "Seleccione al menos un producto restringido o elimine la combinación de productos.",
+      "update": "No se pudo actualizar la combinación de productos."
+    },
+    "none": "Ninguno",
+    "restrictedProducts": "Productos restringidos",
+    "restrictedProductsRequired": "Productos restringidos*",
+    "selectProducts": "Seleccione productos",
+    "summary": "Un cliente con un préstamo <strong>{{name}}</strong> no puede tener también un préstamo de un producto restringido."
+  },
   "productsMix": "Combinación de productos",
   "recurringDepositProducts": "Productos de depósito recurrente",
   "savingsProducts": "Productos de ahorro",
